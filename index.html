@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anonymous Supplementary Material</title>
+  <style>
+    :root {
+      --bg: #f7f7f9;
+      --card: #ffffff;
+      --text: #222;
+      --muted: #666;
+      --line: #dddddd;
+      --accent: #2f6fed;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 0 0 10px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin: 0 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--line);
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    .section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+
+    .note {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .figure-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .figure-card {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 16px;
+      background: #fafafa;
+    }
+
+    .figure-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: white;
+    }
+
+    .caption-title {
+      margin-top: 12px;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    .caption-text {
+      margin-top: 6px;
+      color: #444;
+      font-size: 15px;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      margin-top: 12px;
+    }
+
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 15px;
+    }
+
+    th {
+      background: #f0f3f8;
+      font-weight: 700;
+    }
+
+    .small {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (min-width: 800px) {
+      .figure-grid.two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 999px;
+      background: #eef3ff;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    code {
+      background: #f1f1f1;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 90%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Anonymous Supplementary Material</h1>
+    <p class="subtitle">
+      This page provides supplementary figures and tables for reviewer reference only.
+    </p>
+
+    <div class="section">
+      <div class="tag">Usage</div>
+      <p>
+        Put this <code>index.html</code> in the same folder as your images, such as
+        <code>figure1.png</code> and <code>figure2.png</code>.
+      </p>
+      <p class="note">
+        Keep the page anonymous. Do not include author names, affiliations, personal links, or repository-identifying information.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Supplementary Figures</h2>
+
+      <div class="figure-grid two-col">
+        <div class="figure-card">
+          <img src="figure1.png" alt="Supplementary Figure 1">
+          <div class="caption-title">Figure 1. Example supplementary figure</div>
+          <div class="caption-text">
+            Replace this caption with a short neutral description of the figure.
+          </div>
+        </div>
+
+        <div class="figure-card">
+          <img src="figure2.png" alt="Supplementary Figure 2">
+          <div class="caption-title">Figure 2. Additional qualitative result</div>
+          <div class="caption-text">
+            Replace this text with your actual explanation.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Supplementary Table</h2>
+      <p class="small">
+        Replace the numbers and headers below with your actual results.
+      </p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Method</th>
+              <th>Task A</th>
+              <th>Task B</th>
+              <th>Task C</th>
+              <th>Average</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Method 1</td>
+              <td>85.0</td>
+              <td>79.5</td>
+              <td>88.2</td>
+              <td>84.2</td>
+            </tr>
+            <tr>
+              <td>Method 2</td>
+              <td>82.4</td>
+              <td>77.8</td>
+              <td>86.9</td>
+              <td>82.4</td>
+            </tr>
+            <tr>
+              <td>Method 3</td>
+              <td>87.1</td>
+              <td>80.2</td>
+              <td>89.4</td>
+              <td>85.6</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Optional Notes</h2>
+      <p>
+        You can use this section for brief clarifications, such as experimental settings,
+        extra ablations, or explanations of what the figures/tables show.
+      </p>
+      <p>
+        Keep the content minimal and neutral if this is intended for double-blind review.
+      </p>
+    </div>
+
+    <div class="footer">
+      Anonymous supplementary page
+    </div>
+  </div>
+</body>
+</html>
